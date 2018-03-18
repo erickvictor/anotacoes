@@ -13,7 +13,7 @@ function mostrarRegistros(transaction, result) {
             var row = result.rows.item(i);
             lista = lista + '<li class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-li-has-thumb ui-btn-up-c">';
             lista = lista + '<div class="ui-btn-inner ui-li"><div class="ui-btn-text">';
-            lista = lista + '<div class="ui-link-inherit" href="visualizarAnotacao.html?id=' + row.id + '">';
+            lista = lista + '<a class="ui-link-inherit" href="visualizarAnotacao.html?id=' + row.id + '">';
             lista = lista + '<h4 class="ui-li-heading">' + row.conteudo + '</h4>';
             lista = lista + '<p class="ui-li-desc">' + row.published + '</p>';
             lista = lista + '</a></div></div></li>';
